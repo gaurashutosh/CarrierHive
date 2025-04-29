@@ -70,6 +70,7 @@ export const login = async (req, res) => {
                 success: false,
             })
         };
+        
         // check role is correct or not
         if (role !== user.role) {
             return res.status(400).json({
@@ -116,6 +117,7 @@ export const updateProfile = async (req, res) => {
         const { fullname, email, phoneNumber, bio, skills } = req.body;
         
         const file = req.file;
+        
         // cloudinary ayega idhar
         const fileUri = getDataUri(file);
         const cloudResponse = await cloudinary.uploader.upload(fileUri.content);

@@ -86,7 +86,7 @@ const PostJob = () => {
                             />
                         </div>
                         <div>
-                            <Label>Requirements</Label>
+                            <Label>Skills Requirement</Label>
                             <Input
                                 type="text"
                                 name="requirements"
@@ -96,7 +96,7 @@ const PostJob = () => {
                             />
                         </div>
                         <div>
-                            <Label>Salary</Label>
+                            <Label>Salary (In LPA)</Label>
                             <Input
                                 type="text"
                                 name="salary"
@@ -116,7 +116,7 @@ const PostJob = () => {
                             />
                         </div>
                         <div>
-                            <Label>Job Type</Label>
+                            <Label>Job Type (Full-time/Part-time)</Label>
                             <Input
                                 type="text"
                                 name="jobType"
@@ -126,7 +126,7 @@ const PostJob = () => {
                             />
                         </div>
                         <div>
-                            <Label>Experience Level</Label>
+                            <Label>Experience (No. of years)</Label>
                             <Input
                                 type="text"
                                 name="experience"
@@ -136,7 +136,7 @@ const PostJob = () => {
                             />
                         </div>
                         <div>
-                            <Label>No of Postion</Label>
+                            <Label>No of Vacancies</Label>
                             <Input
                                 type="number"
                                 name="position"

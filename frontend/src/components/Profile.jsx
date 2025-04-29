@@ -24,9 +24,16 @@ const Profile = () => {
             <div className='max-w-4xl mx-auto bg-white border border-gray-200 rounded-2xl my-5 p-8'>
                 <div className='flex justify-between'>
                     <div className='flex items-center gap-4'>
-                        <Avatar className="h-24 w-24">
-                            <AvatarImage src="https://www.shutterstock.com/image-vector/circle-line-simple-design-logo-600nw-2174926871.jpg" alt="profile" />
-                        </Avatar>
+                        <Avatar className="cursor-pointer h-10 w-10 border border-gray-400 bg-gray-200">
+                                              <AvatarImage
+                                                src={
+                                                  user?.profile?.profilePhoto ||
+                                                  "https://via.placeholder.com/40"
+                                                }
+                                                alt="User"
+                                              />
+                                            </Avatar>
+                        
                         <div>
                             <h1 className='font-medium text-xl'>{user?.fullname}</h1>
                             <p>{user?.profile?.bio}</p>
@@ -59,7 +66,7 @@ const Profile = () => {
                     }
                 </div>
             </div>
-            <div className='max-w-4xl mx-auto bg-white rounded-2xl'>
+            <div className='max-w-4xl mx-auto bg-white rounded-2xl mb-6'>
                 <h1 className='font-bold text-lg my-5'>Applied Jobs</h1>
                 {/* Applied Job Table   */}
                 <AppliedJobTable />
